@@ -77,6 +77,10 @@ public class MyTreeAdapter<T> extends TreeListViewAdapter<T>
 			viewHolder.label.setTextColor(mContext.getResources().getColorStateList(R.color.text_gray));
 		}
 
+		if(node.isLeaf()){
+			viewHolder.openIcon.setVisibility(View.INVISIBLE);
+		}
+
 
 		viewHolder.label.setText(node.getName());
 		
