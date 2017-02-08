@@ -79,6 +79,8 @@ public class MyTreeAdapter<T> extends TreeListViewAdapter<T>
 
 		if(node.isLeaf()){
 			viewHolder.openIcon.setVisibility(View.INVISIBLE);
+		}else {
+			viewHolder.openIcon.setVisibility(View.VISIBLE);
 		}
 
 
